@@ -15,190 +15,161 @@
   
   }
 
-.blur-background {
-  width: 100%;
-  height: 100%;
-  backdrop-filter: blur(10px);
+  .blur-background {
+    width: 100%;
+    height: 100%;
+    backdrop-filter: blur(3px);
+  
+  }
 
-}
-
-main {
-  display: flex;
-  align-items: center;
-  flex-direction: column;
-  width:  900px;
-  height: 700px;
-  margin: 100px auto;
-  border: solid white;
-  border-radius: var(--radius-normal);
-  box-shadow: 10px 10px 15px 10px rgb(50, 50, 110);
-  background-color: rgba(63, 71, 102, 0.5);
- 
-}
-
-h1 {
-  color:aliceblue;
-  border-bottom: solid 1px white;
-  text-shadow: 6px 6px 10px rgba(0, 0, 0, 0.5);
-  font-weight: 500;
-  font-size: 60px;
-  padding: 10px;
-  margin: 12px;
-
-}
-
-
-h2{
-  margin-top: 10px;
-  margin-bottom: 3;
-  color:aliceblue;
-  text-align:inherit;
-  text-shadow: 6px 6px 10px rgba(0, 0, 0, 0.5);
-  font-weight: 400;
-  font-size: 50px;
-
-}
-
-h3 {
-  color:aliceblue;
-  border-bottom: solid 1px white;
-  text-shadow: 6px 6px 10px rgba(0, 0, 0, 0.5);
-  font-weight: 500;
-  font-size: 60px;
-  padding: 10px;
-  margin: 12px;
-
-}
-
-h5 {
-  color:rgb(255, 255, 255);
-  text-shadow: 6px 6px 10px rgb(0, 0, 0);
-  font-size: 15px;
-  align-items: center;
-  text-align: center;
-  padding: 10px;
-  margin: 12px;
-}
-
-.pergunta, .resposta {
-  width: 500px;
-  height: 150px;
-  resize: none;
-  border-radius: 12px;
-  box-shadow:  10px 14px 16px rgba(0.5, 0.5, 0.5, 0.5);
-
-}
-
-textarea {
-  padding: 1em;
-  font-size: 20px;
-  font-family: 'Courier New', Courier, monospace;
-}
-
-
-
-button, .pesquisaQuestoes{
-  font-size: 16px;
-  padding: 10px 20px;
-  text-decoration: none;
-  margin-top: 12px;
-  border-radius: 8px;
-  border: none;
-  background-color: #007bff;
-  color: #fff;
-  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
-  transition: transform 0.3s ease;
-}
-
-.addPerguntas {
-  color: #fff;
-  margin: 0 0 0 0;
-}
-
-.send-btn{
-  display: flex;
-  justify-content: space-between;
-}
-
-button:hover, .retorno:hover, .pesquisaQuestoes:hover {
-  transform: scale(1.1);
-  background-color: #0056b3;
-}
-
-.addPergunta {
-  color:rgb(250, 250, 250);
-  text-shadow: 6px 6px 10px rgb(0, 0, 0);
-  font-size: 15px;
-  align-items: center;
-  text-align: center;
-}
-
-
-h5{
-  animation: piscar 0.9s infinite alternate;
-}
-
-h4{
-    border: 2px solid #ffffff;
-    color:rgb(255, 255, 255);
-    border-bottom: solid 2px rgb(255, 255, 255);
-    text-shadow: 6px 6px 10px rgb(0, 0, 0);
+  main {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width:45%;
+    height:65%;
+    margin: 5% auto;
+    padding:1%;
+    border: solid white;
+    border-radius: var(--radius-normal);
+    box-shadow: 10px 10px 15px 10px rgb(50, 50, 110);
+    background-color: rgba(63, 71, 102, 0.5);
+   
+  }
+  
+  h1, h2 {
+    color: white;
+    border-bottom: solid 1px white;
+    text-shadow: 6px 6px 10px rgba(0, 0, 0, 0.5);
     font-weight: 500;
-    font-size: 30px;
+    font-size: 4.5em;
     padding: 10px;
     margin: 12px;
-    backdrop-filter: blur(100px);
-}
-
-h5:hover {
-  font-size: 20px;
-}
-
-@keyframes piscar {
-  from {
-    box-shadow: 0 0 10px 5px #001aff;
+  
   }
-  to {
-    box-shadow: none;
-  }
-}
-
-/* Daqui pra baixo é apenas um teste para ver como que fica a responsividade em um aparelho movel. */
-
-@media screen and (max-width: 600px) {
-  h1 {
-    font-size: 30px; /* Tamanho menor para telas menores */
-  }
-
-  h2 {
-    font-size: 24px; /* Tamanho menor para telas menores */
-  }
-
-  h3 {
-    font-size: 30px; /* Tamanho menor para telas menores */
-  }
-
-  h4 {
-    font-size: 24px; /* Tamanho menor para telas menores */
-  }
-
+  
   h5 {
-    font-size: 18px; /* Tamanho menor para telas menores */
+    color:rgb(255, 255, 255);
+    border:var(--radius-normal);
+    text-shadow: 6px 6px 10px rgb(0, 0, 0);
+    font-size: 1.2em;
+    align-items: center;
+    text-align: center;
+    padding: 1em;
+    margin: 2em;
+    animation: piscar 0.9s infinite alternate;
   }
+
 
   .pergunta, .resposta {
-    width: 90%;
-    max-width: 90%; /* Ajustado para ocupar 90% da largura da tela */
-    height: auto; /* Ajustado para altura automática */
-    margin-bottom: 20px; /* Aumentado o espaçamento inferior */
+    width: 25.5em;
+    height: 10em;
+    resize: none;
+    border-radius: var(--radius-normal);
+    box-shadow:  10px 14px 16px rgba(0.5, 0.5, 0.5, 0.5);
+  
   }
-
+  
   textarea {
-    font-size: 14px; /* Tamanho menor para telas menores */
+    padding: 1em;
+    margin: 0.5em;
+    font-size:1.1em;
+    font-family:arial;
   }
 
-  button, .pesquisaQuestoes {
-    font-size: 14px; /* Tamanho menor para telas menores */
-    padding: 8px 16px; /* Reduzido o padding */
+  textarea::placeholder {
+    color:gray;
+    opacity: 0.3;
+    
   }
-}
+  
+  
+  button, .pesquisaQuestoes{
+    font-size: 1.1em;
+    font-family: inherit;
+    padding: 10px 20px;
+    text-decoration: none;
+    margin-top: 12px;
+    border-radius: var(--radius-small);
+    border: none;
+    background-color: #007bff;
+    color: #fff;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+  }
+  
+  .send-btn{
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  a{
+    text-decoration: none;
+  }
+
+  button:hover, .retorno:hover, .pesquisaQuestoes:hover {
+    transform: scale(1.1);
+    background-color: #0056b3;
+  }
+  
+  .addPergunta {
+    color:rgb(250, 250, 250);
+    text-shadow: 6px 6px 10px rgb(0, 0, 0);
+    font-size: 0.90em;
+  }
+  
+
+  h4{
+      border: 2px solid #ffffff;
+      border-radius:var(--radius-small);
+      color:rgb(255, 255, 255);
+      text-shadow: 6px 6px 10px rgb(0, 0, 0);
+      font-weight: 500;
+      font-size: 1.8em;
+      padding: 10px;
+      margin: 12px;
+      backdrop-filter: blur(100px);
+  }
+
+  
+  @keyframes piscar {
+    from {
+      box-shadow: 0 0 10px 5px #001aff;
+    }
+    to {
+      box-shadow: none;
+    }
+  }
+  
+  /* Daqui pra baixo é apenas um teste para ver como que fica a responsividade em um aparelho movel. */
+  
+  @media screen and (max-width: 600px) {
+    main {
+      width: 90%;
+      height: auto;
+      margin: 10% auto;
+      padding: 3%;
+    }
+  
+    h1, h2, h4 {
+      font-size: 1.5em;
+    }
+  
+    .pergunta, .resposta {
+      width: 80%;
+      max-width: 85%;
+      margin-bottom: 5%;
+    }
+  
+    textarea {
+      font-size: 1em;
+    }
+
+    .send-btn {
+      font-size:1em;
+    }
+
+    button {
+      margin-right:1.5em;
+    }
+  }
