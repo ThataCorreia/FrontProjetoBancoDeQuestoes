@@ -8,10 +8,12 @@
   --radius-normal: 12px; }
   
   body{
+    
     background-color:rgb(202, 232, 236);
     background-image: url('img.jpeg');
     background-repeat: no-repeat;
     background-position-x: center;
+    overflow:hidden;
   
   }
 
@@ -145,8 +147,8 @@
       backdrop-filter: blur(100px);
   }
 
-  footer{
-    position: fixed;
+  /* footer{
+    position: absolute;
     bottom: 0;
     left: 0;
     width: 100%;
@@ -154,13 +156,14 @@
     justify-content: center;
     color: rgb(37, 37, 37);
     background-color: #81B2CD;
-  }
+    
+  } */
 
-  .footer-text{
+  /* .footer-text{
     color:white;
     font-weight: 100;
     padding:0.4%;
-  }
+  } */
 
 
   
@@ -229,12 +232,12 @@
       margin: 0 1em 0 1em;
     }
 
-    .footer-text{
+    /* .footer-text{
       color:white;
       font-size:0.70em;
       font-weight: 100;
       padding:0.5%;
 
-    }
+    } */
     
   }
