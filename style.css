@@ -54,6 +54,14 @@
     color:rgb(255, 255, 255);
     border:var(--radius-normal);
     text-shadow: 6px 6px 10px rgb(0, 0, 0);
+    font-weight: 500;
+    font-size: 1.8em;
+    padding: 10px;
+    margin: 12px;
+    backdrop-filter: blur(100px);
+}
+
+  h5 {
     font-size: 1.2em;
     align-items: center;
     text-align: center;
@@ -114,7 +122,7 @@
   }
 
   button:hover, .retorno:hover, .pesquisaQuestoes:hover {
-    transform: scale(1.1);
+    transform: scale(1.02);
     background-color: #0056b3;
   }
   
@@ -177,14 +185,6 @@
       margin:9%;
     }
 
-
-
-    body{
-      width:90%;
-      height:90%;
-      margin:9%;
-    }
-
     main {
       width: 100%;
       justify-content: center;
@@ -222,4 +222,11 @@
       justify-content:center;
       margin: 0 1em 0 1em;
     }
-  }
+  }  font-size:0.60em;
+      font-weight: 100;
+      padding:1%;
+=======
+      font-size:0.75em;
+      font-weight: 100;
+      padding:0.4%;
+>>>>>>> 6d5f937fb444c7e115948d32f2d0c3224775dbe4
