@@ -222,11 +222,13 @@
       justify-content:center;
       margin: 0 1em 0 1em;
     }
-  }  font-size:0.60em;
-      font-weight: 100;
-      padding:1%;
-=======
-      font-size:0.75em;
+
+        .footer-text{
+      color:white;
+      font-size:0.60em;
       font-weight: 100;
       padding:0.4%;
->>>>>>> 6d5f937fb444c7e115948d32f2d0c3224775dbe4
+
+    }
+    
+  }
