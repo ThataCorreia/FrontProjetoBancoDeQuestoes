@@ -17,6 +17,7 @@
   
   }
 
+
   .blur-background {
     width: 100%;
     height: 100%;
@@ -60,6 +61,7 @@
     padding: 10px;
     margin: 12px;
     backdrop-filter: blur(100px);
+    resize: vertical;
     
 }
 
@@ -179,13 +181,15 @@
       /* width:100%;
       height:100%; */
       margin:9% 0 0 9%;
-
+      overflow-y: auto;
     }
+
 
     main {
       width: 100%;
       justify-content: center;
       margin:15% 0 0 -6%;
+      overflow-y: auto
       
     }
   
@@ -193,7 +197,7 @@
       font-size: 1.5em;
 
     }
-  
+    
 
     .pergunta, .resposta {
       width: 250px;

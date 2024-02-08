@@ -68,7 +68,7 @@ function cadastraQuestoes(){
     limparCampo(".pergunta");
     limparCampo(".resposta");
 }
-// }
+
 
 /**
  * Funçao responsavel por obter uma resposta(CORPO JSON) atraves da pergunta.
