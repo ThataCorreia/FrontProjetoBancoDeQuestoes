@@ -41,16 +41,7 @@ function cadastraQuestoes(){
     iResposta = document.querySelector(".resposta").value;
     iPergunta = iPergunta.toLowerCase();
     iPergunta = iPergunta.trim();
-    // if(iPergunta == ""){
-
-    //     alert("Pergunta não pode ser vazia ");
-
-    // }else if(iResposta == ""){
-        
-    //     alert("Resposta não pode ser vazia ");
-
-    // }else{
-    //alert(`Pergunta: ${iPergunta} // Resposta: ${iResposta}  foi enviada e salva no banco de dados.`)
+    
     fetch("https://deploy-bancodequestao.onrender.com/bancoquestao/salvar",
     {
         headers:{

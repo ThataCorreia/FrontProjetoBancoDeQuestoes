@@ -143,26 +143,6 @@
 
   }
 
-
-  /* footer{
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    color: rgb(37, 37, 37);
-    background-color: #81B2CD;
-    
-  } */
-
-  /* .footer-text{
-    color:white;
-    font-weight: 100;
-    padding:0.4%;
-
-  } */
-
   @keyframes piscar {
     from {
       box-shadow: 0 0 10px 10px blue;
@@ -178,8 +158,6 @@
 
 
     body{
-      /* width:100%;
-      height:100%; */
       margin:9% 0 0 9%;
       overflow-y: auto;
     }
@@ -243,13 +221,5 @@
       backdrop-filter: blur(3px);
     
     }
-
-    /* .footer-text{
-      color:white;
-      font-size:0.70em;
-      font-weight: 100;
-      padding:0.5%;
-
-    } */
     
   }
