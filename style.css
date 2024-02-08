@@ -1,15 +1,15 @@
 *{
     margin: 0;
     padding: 0;
-  --cor-1: #f3e8ff;
-  --cor-3: #d8b4fe;
-  --cor-7: #7e22ce;
+  --cor-text: #fafafa;
+  --cor-body: #cae8ec;
+  --cor-main: rgba(63, 71, 102, 0.5);
+  --cor-placeholder:#95989c;
   --radius-small: 8px;
   --radius-normal: 12px; }
   
   body{
-    
-    background-color:rgb(202, 232, 236);
+    background-color:var(--cor-body);
     background-image: url('img.jpeg');
     background-repeat: no-repeat;
     background-position-x: center;
@@ -35,12 +35,12 @@
     border: solid white;
     border-radius: var(--radius-normal);
     box-shadow: 10px 10px 15px 10px gray;
-    background-color: rgba(63, 71, 102, 0.5);
+    background-color: var(--cor-main);
    
   }
   
   h1, h2 {
-    color: white;
+    color:var(--cor-text);
     border-bottom: solid 1px white;
     text-shadow: 6px 6px 10px rgba(0, 0, 0, 0.5);
     font-weight: 500;
@@ -53,14 +53,14 @@
   h4{
     border: 2px solid #ffffff;
     border-radius:var(--radius-small);
-    color:rgb(255, 255, 255);
-    border:var(--radius-normal);
+    color:var(--cor-text);
     text-shadow: 6px 6px 10px rgb(0, 0, 0);
     font-weight: 500;
     font-size: 1.8em;
     padding: 10px;
     margin: 12px;
     backdrop-filter: blur(100px);
+    
 }
 
   h5 {
@@ -70,6 +70,7 @@
     padding: 1em;
     margin: 2em;
     animation: piscar 0.9s infinite alternate;
+
   }
 
 
@@ -90,10 +91,11 @@
     margin: 0.5em;
     font-size:1.1em;
     font-family:arial;
+
   }
 
   textarea::placeholder {
-    color:gray;
+    color:var(--cor-placeholder);
     opacity: 0.3;
     
   }
@@ -108,44 +110,37 @@
     text-decoration: none;
     margin-top: 12px;
     border-radius: var(--radius-small);
-    background-color: #00A9FF;
-    color: white;
+    background-color: #3d6991;
+    color:var(--cor-text);
     box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
     transition: transform 0.3s ease;
+
   }
   
   .send-btn{
     display: flex;
     justify-content: space-between;
+
   }
   
   a{
     text-decoration: none;
+
   }
 
   button:hover, .retorno:hover, .pesquisaQuestoes:hover {
     transform: scale(1.02);
     background-color: #0056b3;
+
   }
   
   .addPergunta {
-    color:rgb(250, 250, 250);
+    color:var(--cor-text);
     text-shadow: 6px 6px 10px rgb(0, 0, 0);
     font-size: 0.90em;
-  }
-  
 
-  h4{
-      border: 2px solid #ffffff;
-      border-radius:var(--radius-small);
-      color:rgb(255, 255, 255);
-      text-shadow: 6px 6px 10px rgb(0, 0, 0);
-      font-weight: 500;
-      font-size: 1.8em;
-      padding: 10px;
-      margin: 12px;
-      backdrop-filter: blur(100px);
   }
+
 
   /* footer{
     position: absolute;
@@ -163,10 +158,9 @@
     color:white;
     font-weight: 100;
     padding:0.4%;
+
   } */
 
-
-  
   @keyframes piscar {
     from {
       box-shadow: 0 0 10px 10px blue;
@@ -185,6 +179,7 @@
       /* width:100%;
       height:100%; */
       margin:9% 0 0 9%;
+
     }
 
     main {
@@ -196,6 +191,7 @@
   
     h1, h2, h4 {
       font-size: 1.5em;
+
     }
   
 
