@@ -232,6 +232,13 @@
       margin: 0 1em 0 1em;
     }
 
+    .blur-background {
+      width: auto;
+      height: auto; 
+      backdrop-filter: blur(3px);
+    
+    }
+
     /* .footer-text{
       color:white;
       font-size:0.70em;
