@@ -41,15 +41,15 @@ function cadastraQuestoes(){
     iResposta = document.querySelector(".resposta").value;
     iPergunta = iPergunta.toLowerCase();
     iPergunta = iPergunta.trim();
-    if(iPergunta == ""){
+    // if(iPergunta == ""){
 
-        alert("Pergunta não pode ser vazia ");
+    //     alert("Pergunta não pode ser vazia ");
 
-    }else if(iResposta == ""){
+    // }else if(iResposta == ""){
         
-        alert("Resposta não pode ser vazia ");
+    //     alert("Resposta não pode ser vazia ");
 
-    }else{
+    // }else{
     //alert(`Pergunta: ${iPergunta} // Resposta: ${iResposta}  foi enviada e salva no banco de dados.`)
     fetch("https://deploy-bancodequestao.onrender.com/bancoquestao/salvar",
     {
@@ -68,7 +68,7 @@ function cadastraQuestoes(){
     limparCampo(".pergunta");
     limparCampo(".resposta");
 }
-}
+// }
 
 /**
  * Funçao responsavel por obter uma resposta(CORPO JSON) atraves da pergunta.
