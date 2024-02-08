@@ -1,7 +1,6 @@
 *{
     margin: 0;
     padding: 0;
-    overflow: hidden;
   --cor-1: #f3e8ff;
   --cor-3: #d8b4fe;
   --cor-7: #7e22ce;
@@ -26,7 +25,6 @@
   main {
     display: flex;
     align-items: center;
-
     flex-direction: column;
     width:45%;
     height:65%;
@@ -183,20 +181,19 @@
     body{
       width:90%;
       height:90%;
-      margin:5%;
-      display:flex;
+      margin:9%;
     }
 
     main {
-      width: 90%;
+      width: 100%;
       justify-content: center;
-      height: 70vh;
-      margin-top:20%;
+      margin:25% 0 0 -6%;
+      
     }
   
     h1, h2 {
-      margin-top:-20%;
-      font-size: 2.5em;
+      margin-top:-4%;
+      font-size: 2.3em;
     }
 
     h4{
@@ -205,10 +202,8 @@
   
 
     .pergunta, .resposta {
-
       width: 250px;
       height:80px;
-      margin:10%;
       margin-bottom: 10px;
       margin-top: 10px;
       padding-bottom: 10px;
@@ -226,11 +221,17 @@
     }
 
     button, .pesquisaQuestoes {
-
       aling-itens:center;
       text-align:center;
       justify-content:center;
       margin: 0 1em 0 1em;
+    }
+
+    .footer-text{
+      color:white;
+      font-size:0.75em;
+      font-weight: 100;
+      padding:0.4%;
     }
 
   }
