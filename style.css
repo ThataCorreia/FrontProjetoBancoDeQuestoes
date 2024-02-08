@@ -32,7 +32,7 @@
     padding:1%;
     border: solid white;
     border-radius: var(--radius-normal);
-    box-shadow: 10px 10px 15px 10px rgb(50, 50, 110);
+    box-shadow: 10px 10px 15px 10px gray;
     background-color: rgba(63, 71, 102, 0.5);
    
   }
@@ -48,10 +48,19 @@
   
   }
   
-  h5 {
+  h4{
+    border: 2px solid #ffffff;
+    border-radius:var(--radius-small);
     color:rgb(255, 255, 255);
-    border:var(--radius-normal);
     text-shadow: 6px 6px 10px rgb(0, 0, 0);
+    font-weight: 500;
+    font-size: 1.8em;
+    padding: 10px;
+    margin: 12px;
+    backdrop-filter: blur(100px);
+}
+
+  h5 {
     font-size: 1.2em;
     align-items: center;
     text-align: center;
@@ -66,6 +75,9 @@
     height: 10em;
     resize: none;
     border-radius: var(--radius-normal);
+    align-itens:center;
+    border:solid #89CFF3 9px;
+    border-style:double;
     box-shadow:  10px 14px 16px rgba(0.5, 0.5, 0.5, 0.5);
   
   }
@@ -85,15 +97,16 @@
   
   
   button, .pesquisaQuestoes{
+    border:solid white 0.2em;
+    border-style:double;
     font-size: 1.1em;
     font-family: inherit;
     padding: 10px 20px;
     text-decoration: none;
     margin-top: 12px;
     border-radius: var(--radius-small);
-    border: none;
-    background-color: #007bff;
-    color: #fff;
+    background-color: #00A9FF;
+    color: white;
     box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
     transition: transform 0.3s ease;
   }
@@ -108,7 +121,7 @@
   }
 
   button:hover, .retorno:hover, .pesquisaQuestoes:hover {
-    transform: scale(1.1);
+    transform: scale(1.02);
     background-color: #0056b3;
   }
   
@@ -131,10 +144,29 @@
       backdrop-filter: blur(100px);
   }
 
+  footer{
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    color: rgb(37, 37, 37);
+    background-color: #81B2CD;
+    font-weight: 600;
+  }
+
+  .footer-text{
+    color:white;
+    font-weight: 100;
+    padding:0.4%;
+  }
+
+
   
   @keyframes piscar {
     from {
-      box-shadow: 0 0 10px 5px #001aff;
+      box-shadow: 0 0 10px 10px blue;
     }
     to {
       box-shadow: none;
@@ -144,21 +176,39 @@
   /* Daqui pra baixo é apenas um teste para ver como que fica a responsividade em um aparelho movel. */
   
   @media screen and (max-width: 600px) {
+
+
+    body{
+      width:90%;
+      height:90%;
+      margin:9%;
+    }
+
     main {
-      width: 90%;
-      height: auto;
-      margin: 10% auto;
-      padding: 3%;
+      width: 100%;
+      justify-content: center;
+      margin:25% 0 0 -6%;
+      
     }
   
-    h1, h2, h4 {
-      font-size: 1.5em;
+    h1, h2 {
+      margin-top:4%;
+      font-size: 2.1em;
+    }
+
+    h4{
+      font-size:1.5em;
     }
   
+
     .pergunta, .resposta {
-      width: 80%;
-      max-width: 85%;
-      margin-bottom: 5%;
+      width: 250px;
+      height:80px;
+      margin-bottom: 10px;
+      margin-top: 10px;
+      padding-bottom: 10px;
+      padding-top:10px;
+      font-size:1em;
     }
   
     textarea {
@@ -166,10 +216,22 @@
     }
 
     .send-btn {
-      font-size:1em;
+      font-size:0.90em;
+      margin-top:7%;
     }
 
-    button {
-      margin-right:1.5em;
+    button, .pesquisaQuestoes {
+      aling-itens:center;
+      text-align:center;
+      justify-content:center;
+      margin: 0 1em 0 1em;
     }
+
+    .footer-text{
+      color:white;
+      font-size:0.60em;
+      font-weight: 100;
+      padding:1%;
+    }
+
   }

@@ -93,7 +93,7 @@ function obterQuestoes(){
     .then(response => response.json())
     .then(Questao=>{
         if(Object.keys(Questao).length == 0){
-        passarTextoParaHtml("h4", `Questão não encontrada no banco de dados, procure outra questão`)
+        passarTextoParaHtml("h4", `Questão não encontrada no banco de dados, adicione ou procure outra questão.`)
         }else{
         console.log(Questao);
         let respostaQ = JSON.stringify(Questao); // variavel que obtem o JSON convertido em string
