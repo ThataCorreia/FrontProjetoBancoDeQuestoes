@@ -65,7 +65,6 @@
     resize: vertical;
     
   }
-  
 
   h5 {
     font-size: 1.2em;
@@ -156,7 +155,7 @@
   
   /* Daqui pra baixo é apenas um teste para ver como que fica a responsividade em um aparelho movel. */
   
-  @media screen and (max-width: 1024px) {
+  @media screen and (max-width: 768px) {
 
     body{
       margin:9% 0 0 9%;
@@ -221,5 +220,5 @@
       backdrop-filter: blur(3px);
     
     }
-    
+  
   }
