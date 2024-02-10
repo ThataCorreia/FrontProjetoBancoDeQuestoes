@@ -65,6 +65,7 @@
     resize: vertical;
     
   }
+  }
 
   h5 {
     font-size: 1.2em;
@@ -155,6 +156,7 @@
   
   /* Daqui pra baixo é apenas um teste para ver como que fica a responsividade em um aparelho movel. */
   
+  @media screen and (max-width: 768px) {
   @media screen and (max-width: 768px) {
 
     body{
